@@ -29,7 +29,7 @@ for tweet in timeline:
     		logger.error("Error on fav", exc_info=True)
     if not tweet.retweeted:
     	try:
-    		# tweet.retweet()
+    		tweet.retweet()
     	except Exception as e:
     		logger.error("Error on fav and retweeted", exc_info=True)
 
