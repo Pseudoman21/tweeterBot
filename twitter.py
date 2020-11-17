@@ -17,7 +17,7 @@ api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
 user = api.me()
 
-sparkPoint = api.get_user("SecuriTeam_SSD")
+sparkPoint = api.get_user("Converge_CSU")
 
 timeline = sparkPoint.timeline()
 
