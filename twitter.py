@@ -54,7 +54,7 @@ while(True):
                 api.create_favorite(tweetBurst.id)
             except Exception as e:
                 logger.error("Error on fav", exc_info=True)
-                if not tweetBurst.retweeted:
+        if not tweetBurst.retweeted:
             try:
                 tweetBurst.retweet()
             except Exception as e:
