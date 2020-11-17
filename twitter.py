@@ -1,6 +1,6 @@
 import tweepy
 import time
-import intertools
+import itertools
 from os import environ 
 
 
