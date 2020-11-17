@@ -17,7 +17,7 @@ api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
 user = api.me()
 
-sparkPoint = api.get_user("Crypto_Shooter")
+sparkPoint = api.get_user("SecuriTeam_SSD")
 
 timeline = sparkPoint.timeline()
 
@@ -29,7 +29,7 @@ for tweet in timeline:
     		logger.error("Error on fav", exc_info=True)
     if not tweet.retweeted:
     	try:
-    		tweet.retweet()
+    		# tweet.retweet()
     	except Exception as e:
     		logger.error("Error on fav and retweeted", exc_info=True)
 
