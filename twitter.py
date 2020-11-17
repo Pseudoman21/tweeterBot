@@ -9,24 +9,11 @@ api = tweepy.API(auth, wait_on_rate_limit=True, wait_on_rate_limit_notify=True)
 
 user = api.me()
 
-# print(user.screen_name)
-
-sparkPoint = api.get_user("JRNYcrypto")
-
-# print("User details:")
-# print(sparkPoint.name)
-# print(sparkPoint.description)
-# print(sparkPoint.location)
-
-# print("Last 20 Followers:")
-# for follower in sparkPoint.followers():
-#     print(follower.name)
-
+sparkPoint = api.get_user("Crypto_Shooter")
 
 timeline = sparkPoint.timeline()
 
 for tweet in timeline:
-    # print(f"{tweet.user.name} said {tweet.text}")
     if not tweet.favorited:
     	try:
     		api.create_favorite(tweet.id)
@@ -38,12 +25,3 @@ for tweet in timeline:
     	except Exception as e:
     		logger.error("Error on fav and retweeted", exc_info=True)
 
-# api.update_status("Yeah, I saw it bellow, so its working...")
-# for follower in tweepy.Cursor(api.followers).items():
-# 	print(follower.name)
-
-# Likes the tweet
-# tweets = api.home_timeline(count=1)
-# tweet = tweets[0]
-# print(f"Liking tweet {tweet.id} of {tweet.author.name}")
-# api.create_favorite(tweet.id)
