@@ -1,5 +1,6 @@
 import tweepy
 import time
+import intertools
 from os import environ 
 
 
