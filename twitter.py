@@ -29,7 +29,7 @@ for user_name in itertools.cycle(accountsToFollow):
                 print('Tweet Liked!')
                 tweet.retweet()
                 print('Tweet Retweeted!')
-                time.sleep(600)
+                time.sleep(3600)
                 break
 
         except tweepy.TweepError as e:
