@@ -16,7 +16,7 @@ api = tweepy.API(auth,wait_on_rate_limit=True,wait_on_rate_limit_notify=True)
 
 numberOfTweets = 100
 
-accountsToFollow = ['CryptoBurstGame','Crypto_Shooter','SparkDeFi','CryptoSlicer','nasdaily','PrNightfall','sparkpointio','JRNYcrypto','bouncebackco']
+accountsToFollow = ['CryptoBurstGame','Crypto_Shooter','SparkDeFi','BitMartExchange','CryptoSlicer','nasdaily','PrNightfall','sparkpointio','JRNYcrypto','bouncebackco']
 
 for user_name in itertools.cycle(accountsToFollow):
     user = api.get_user(screen_name = user_name)
